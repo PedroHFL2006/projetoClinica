@@ -1,0 +1,22 @@
+# Dependências
+node_modules/
+
+# Arquivos de ambiente (MUITO IMPORTANTE)
+.env
+
+# Compilação do TypeScript / JavaScript
+dist/
+build/
+
+# IDE
+.idea/
+
+# Prisma
+/prisma/dev.db
+/prisma/dev.db-journal
+*.db
+*.db-journal
+
+# Se o seu Prisma gera o client para uma pasta customizada (ex: src/generated ou ./generated)
+/src/generated/
+/generated/
