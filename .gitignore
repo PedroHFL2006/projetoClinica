@@ -10,6 +10,7 @@ build/
 
 # IDE
 .idea/
+.vscode/
 
 # Prisma
 /prisma/dev.db
@@ -17,6 +18,5 @@ build/
 *.db
 *.db-journal
 
-# Se o seu Prisma gera o client para uma pasta customizada (ex: src/generated ou ./generated)
-/src/generated/
-/generated/
+# Arquivos zip
+*.zip
