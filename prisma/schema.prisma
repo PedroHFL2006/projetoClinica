@@ -8,21 +8,23 @@ datasource db {
 }
 
 model Paciente {
-  id       Int    @id @default(autoincrement())
-  nome     String
-  email    String @unique
+  id Int @id @default(autoincrement())
+  nome String
+  cpf String @unique
   telefone String
+  criadoEm DateTime @default(now()) @map("criado_em")
+  atualizadoEm DateTime @updatedAt @map("atualizado_em")
 
   @@map("pacientes")
 }
 
 model Medico {
-  id            Int    @id @default(autoincrement())
-  nome          String
-  crm           String @unique
+  id Int @id @default(autoincrement())
+  nome String
+  crm String @unique
   especialidade String
-  email         String @unique
-  telefone      String
+  criadoEm DateTime @default(now()) @map("criado_em")
+  atualizadoEm DateTime @updatedAt @map("atualizado_em")
 
-  @@map("medicos")
+   @@map("medicos")
 }

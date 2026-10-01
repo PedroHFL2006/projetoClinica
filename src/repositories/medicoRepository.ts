@@ -1,3 +1,7 @@
+import type {medicoDTO} from "../types/medico.js";
+import type { Medico } from "@prisma/client"
+import { prisma } from "../config/prisma.js"
+
 import { PrismaClient } from "@prisma/client";
 
 const prisma = new PrismaClient();

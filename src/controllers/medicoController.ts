@@ -1,6 +1,7 @@
 import type { Request, Response } from "express";
 import * as service from "../services/medicoService.js";
 import type { MedicoDTO } from "../repositories/medicoRepository.js";
+import type { Medico } from "@prisma/client"
 
 export async function listar(req: Request, res: Response) {
   try {
